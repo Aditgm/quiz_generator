@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - AI Quiz Generator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">🎓 Quiz generator <sub>with fallback mode</sub></div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/teacher.html">Teacher</a>
+                <a href="/student.html">Student</a>
+                <a href="/leaderboard.html" class="active">Leaderboard</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1
+            style="font-size: 2.5rem; font-weight: 800; margin-bottom: 2rem; background: var(--success-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+            🏆 Leaderboard
+        </h1>
+
+        
+        <div class="card mb-2">
+            <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <div class="form-group" style="flex: 1; min-width: 200px; margin-bottom: 0;">
+                    <label class="form-label">Filter by Quiz</label>
+                    <select id="quizFilter" class="form-select" onchange="loadLeaderboard()">
+                        <option value="">All Quizzes (Global)</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" onclick="loadLeaderboard()">
+                    🔄 Refresh
+                </button>
+            </div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Top Performers</h2>
+                <p class="card-subtitle">Compete with other students and climb the ranks!</p>
+            </div>
+
+            <div id="leaderboardLoading" class="spinner"></div>
+
+            <div id="leaderboardContainer" class="hidden">
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Student Name</th>
+                            <th>Quiz</th>
+                            <th>Score</th>
+                            <th>Percentage</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardBody">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="noResults" class="hidden" style="text-align: center; padding: 3rem; color: var(--text-secondary);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
+                <p>No quiz attempts yet. Be the first to take a quiz!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/leaderboard.js"></script>
+</body>
+
+</html>

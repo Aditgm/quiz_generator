@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz Generator - Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">🎓 Quiz generator <sub>with fallback mode</sub></div>
+            <nav>
+                <a href="/" class="active">Home</a>
+                <a href="/teacher.html">Teacher</a>
+                <a href="/student.html">Student</a>
+                <a href="/leaderboard.html">Leaderboard</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div style="text-align: center; padding: 4rem 0;">
+            <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem; background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                Welcome to AI Quiz Generator
+            </h1>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Automatically generate multiple choice questions from your study materials using AI. 
+                Create engaging quizzes, test students, and track performance with our intelligent system.
+            </p>
+
+            <div class="grid grid-3" style="margin-top: 3rem;">
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📚</div>
+                    <h3 style="margin-bottom: 0.5rem;">Upload Materials</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        Upload text, PDF, or Word documents containing your study material.
+                    </p>
+                    <a href="/teacher.html" class="btn btn-primary">Go to Teacher Dashboard</a>
+                </div>
+
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">✏️</div>
+                    <h3 style="margin-bottom: 0.5rem;">Take Quizzes</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        Students can attempt quizzes online and get instant results.
+                    </p>
+                    <a href="/student.html" class="btn btn-secondary">Start Quiz</a>
+                </div>
+
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏆</div>
+                    <h3 style="margin-bottom: 0.5rem;">View Leaderboard</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        Track top performers and compete with other students.
+                    </p>
+                    <a href="/leaderboard.html" class="btn btn-success">View Rankings</a>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 3rem; text-align: left;">
+                <div class="card-header">
+                    <h2 class="card-title">Key Features</h2>
+                </div>
+                <div class="grid grid-2">
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem;">🤖 AI-Powered Generation</h4>
+                        <p style="color: var(--text-secondary);">
+                            Uses Generative AI to create intelligent, context-aware multiple choice questions.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem;">🔄 Fallback Mechanism</h4>
+                        <p style="color: var(--text-secondary);">
+                            Rule-based quiz generation ensures reliability when AI is unavailable.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem;">📄 Multiple Formats</h4>
+                        <p style="color: var(--text-secondary);">
+                            Supports text files, PDFs, and Word documents for maximum flexibility.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem;">⚡ Instant Evaluation</h4>
+                        <p style="color: var(--text-secondary);">
+                            Automatic grading and immediate feedback for student submissions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

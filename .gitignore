@@ -1,0 +1,31 @@
+# Maven and Java Target
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs and Temp
+*.log
+out.log
+out*.log
+start*.log
+uploads/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Environment Variables
+.env
+.env.local
+
+# Installed tools during agent session
+apache-maven-*/
+maven.zip
